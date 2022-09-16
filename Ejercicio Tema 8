@@ -1,0 +1,51 @@
+# Openbootcamp
+public class Main {
+    public static void main(String[] args) {
+            Persona edad = new Persona();
+            Persona nombre = new Persona();
+            Persona numeroTelefono = new Persona();
+
+            edad.setEdad(15);
+            nombre.setNombre("Juan");
+            numeroTelefono.setNumeroTelefono(3158694);
+            System.out.println(nombre.getNombre() + " " + "tiene" +" " + edad.getEdad() + ", numero de telefono: " + numeroTelefono.getNumeroTelefono());
+
+            edad.setEdad(20);
+            nombre.setNombre("Omar");
+            numeroTelefono.setNumeroTelefono(4165106);
+            System.out.println(nombre.getNombre() + " " + "tiene" +" " + edad.getEdad() + ", numero de telefono: " + numeroTelefono.getNumeroTelefono());
+
+            edad.setEdad(30);
+            nombre.setNombre("Maria");
+            numeroTelefono.setNumeroTelefono(25645896);
+            System.out.println(nombre.getNombre() + " " + "tiene" +" " + edad.getEdad() + ", numero de telefono: " + numeroTelefono.getNumeroTelefono());
+
+    }
+}
+class Persona {
+    private int edad;
+    private String nombre;
+    private int numeroTelefono;
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+    public int getEdad() {
+        return this.edad;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getNombre() {
+        return this.nombre;
+    }
+    public void setNumeroTelefono(int numeroTelefono) {
+        this.numeroTelefono = numeroTelefono;
+    }
+
+    public int getNumeroTelefono() {
+        return this.numeroTelefono;
+    }
+}
