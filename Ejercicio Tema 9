@@ -1,0 +1,30 @@
+# Openbootcamp
+public class Main {
+    public static void main(String[] args) {
+        Cliente cliente = new Cliente();
+        Trabajador trabajador = new Trabajador();
+        cliente.Edad = 20;
+        cliente.nombre = "Juan";
+        cliente.telefono = 46215498;
+        cliente.Credito = 5600;
+        System.out.println("Nombre: " + cliente.nombre );
+        System.out.println("Edad: " + cliente.Edad);
+        System.out.println("Telefono: "+ cliente.telefono);
+        System.out.println("Credito: "+ cliente.Credito);
+        trabajador.Salario = 1500;
+        System.out.println("Salario: " + trabajador.Salario);
+
+    }
+}
+class Persona{
+    public int Edad;
+    public String nombre;
+    public int telefono;
+
+}
+class Cliente extends Persona{
+    int Credito;
+}
+class Trabajador extends Persona{
+    public int Salario;
+}
